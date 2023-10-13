@@ -23,8 +23,8 @@ Asena.addCommand({pattern: 'ytv ?(.*)', fromMe: wk, desc: 'video downloading lin
 const ig = await Axios.get('https://avatars.githubusercontent.com/u/85664936?s=120&v=4', {responseType: 'arraybuffer'})
 const options = {}
 options.linkPreview = {
-               head: "WhiteDevil",
-               body: "© TERROR-BOY ©",
+               head: "KresswellBot",
+               body: "© KRESSWELL ©",
                mediaType: 2, //3 for video
                thumbnail: Buffer.from(ig.data) ,
                sourceUrl: "https://github.com/terror-boy/WhiteDevil",
