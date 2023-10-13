@@ -28,9 +28,9 @@ var SYSDTXT =  '💻 System status'
 
 var VER = '🧬 Version'
 //  ....................................................................................................
-      var plk_say = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]           // .
+      var plk_say = new Date().toLocaleString('HI', { timeZone: 'Africa/Nairobi'}).split(' ')[1]           // .
         const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };   // .   
-        var plk_here = new Date().toLocaleDateString(get_localized_date)                                  // .  --------->>> CREDIT:-AFNAN PLK PINKYMWOL 
+        var plk_here = new Date().toLocaleDateString(get_localized_date)                                  // .  --------->>> CREDIT:-KRESSWELL-LABS 
 	  var afnplk = '*⏱ Time :' + plk_say + '*\n\n *📅 Date :' + plk_here + '*'                  // .
                                                                                                           // . 
     // ..................................................................................................  
@@ -75,10 +75,10 @@ Ktb.addCommand({pattern: 'status', fromMe: wk, desc: Lang.SYSD_DESC, dontAddComm
 Ktb.addCommand({pattern: 'version', fromMe: wk, desc: 'nil', dontAddCommandList: true,  deleteCommand: false}, (async (message, match) => {
    
     await message.client.sendMessage(message.jid, 
-        `*🧬 WhiteDevil Version 🧬*\n\n` + 
+        `*🧬 KRESSWELLBOT Version 🧬*\n\n` + 
         '```Installed version :```\n' +
         config.VERSION + 
-        `\n\nCheck official website : https://whitedevil-bot.yolasite.com/`
+        `\n\nCheck official website : https://kresswell.is-a.dev/`
    , MessageType.text, {quoted: message.data});
     
 }));
